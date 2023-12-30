@@ -4,6 +4,7 @@ NONE=','
 RED='R'
 YELLOW='Y'
 PINK='P'
+BLACK='B'
 def positiveDiagonal(matrix,columns,rows): """Get positive-diagonals, going from bottom-left to top-right."""
 	for di in ([(j,i-j) for j in range(columns)] for i in range(columns+rows-1)):
 		yield [matrix[i][j] for i, j in di if i >= 0 and j >= 0 and i < columns and j < rows]
